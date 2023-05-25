@@ -10,6 +10,8 @@ function getSum () {
         sum += num;
         return sum;
     }
+    // або скороченно
+    // return (num) => sum+=num;
 }
 
 const sum = getSum();
