@@ -7,12 +7,11 @@
     <title>Login page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body>   
         <h1>Login Page</h1>
         <input type="email" id="email" placeholder="Email" >
         <input type="password" id="password" placeholder="Password" >
-        <button onclick="redirectToProfile()">Login
+        <button class="loaderButton" onclick="redirectToProfile()">Login
             <div id="loader">
                 <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -28,12 +27,8 @@
                     <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
                     <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
                 </svg>           
-            </div>
-
-            
+            </div> 
         </button>
-        
-
     <script src="script.js"></script>
 </body>
 </html>

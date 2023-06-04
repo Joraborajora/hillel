@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My profile</title>
     <link rel="stylesheet" href="style.css">
+   
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDocVAUUCfq-ziWUU2Wz63Pc2I-ym4YaFk"></script>
+    
 </head>
-<body>
-    <h1>Hello</h1>
+<body onload="getScreenSize()">
+    <h1>My profile page</h1>
+    <button class="backButton" onclick="goBack()">Back</button>
+    <button class="getConsoleAddress" onclick="getAddress()">Get Address</button>
     <script src="script.js"></script>
 </body>
 </html>
