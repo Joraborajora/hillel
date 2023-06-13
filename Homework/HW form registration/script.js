@@ -55,4 +55,60 @@ function errorCallback(error) {
     console.log("Error getting geolocation: " + error.message);
   }
 
-   
+// Підключення необхідних елементів DOM
+var productInfo = document.getElementById('product-info');
+var buyButton = document.getElementById('buy-button');
+var orderForm = document.getElementById('order-form');
+var orderSummary = document.getElementById('order-summary');
+var productSummary = document.getElementById('product-summary');
+var deliverySummary = document.getElementById('delivery-summary');
+
+// Слухач події натискання кнопки "Купити"
+buyButton.addEventListener('click', function() {
+  // Приховування інформації про товар та відображення форми оформлення замовлення
+  productInfo.style.display = 'none';
+  orderForm.style.display = 'block';
+});
+
+// Слухач події відправки форми
+orderForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Зупинка перезавантаження сторінки
+
+  // Перевірка валідності даних форми
+  if (validateOrderForm()) {
+    // Відображення інформації про замовлення
+    displayOrderSummary();
+  } else {
+    alert('Будь ласка, заповніть всі обов\'язкові поля форми!');
+  }
+});
+
+// Функція для перевірки валідності даних форми
+function validateOrderForm() {
+  var name = document.getElementById('name').value;
+  var city = document.getElementById('city').value;
+  var novaPoshta = document.getElementById('nova-poshta').value;
+  var paymentMethod = document.getElementById('payment-method').value;
+  var quantity = document.getElementById('quantity').value;
+
+  if (name === '' || city === '' || novaPoshta === '' || paymentMethod === '' || quantity === '') {
+    return false;
+  }
+
+  return true;
+}
+
+// Функція для відображення інформації про замовлення
+function displayOrderSummary() {
+  // Отримання інформації з форми та інші необхідні дії
+  var productName = 'Назва товару'; // Замінити на реальні дані товару
+  var deliveryInfo = 'Інформація про доставку'; // Замінити на реальну інформацію про доставку
+
+  // Відображення інформації про замовлення
+  productSummary.textContent = 'Товар: ' + productName;
+  deliverySummary.textContent = 'Доставка: ' + deliveryInfo;
+
+  // Приховування форми оформлення замовлення та відображення інформації про замовлення
+  orderForm.style.display = 'none';
+  orderSummary.style.display = 'block';
+}
