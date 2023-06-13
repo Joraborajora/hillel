@@ -1,9 +1,31 @@
 function redirectToProfile() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    const phone = document.getElementById('phone').value;
+    const fullName = document.getElementById('fullName').value;
+
     
     console.log(`Email: ${email}`);
     console.log(`Password: ${password}`);
+
+// Виконати валідацію полів
+const emailRegex = /^.{5,}@.*\..*$/;
+const phoneRegex = /^[+\d()-]{10,13}$/;
+const nameRegex = /^[A-Z][a-zA-Z]*\s[A-Z][a-zA-Z]*\s[A-Z][a-zA-Z]*$/;
+
+if (!emailRegex.test(email)) {
+    alert('Введіть коректний email');
+    return;
+  } else if (!phoneRegex.test(phone)){
+    alert('Введіть правильний номер телефону у форматі +1(123)456 78 90');
+    return;
+  } else if (!nameRegex.test(fullName)) {
+    alert('введіть повністю ПІБ з заглавної букви');
+    return;
+  }
+
+
+
 
     document.getElementById("loader").style.display = "block";
     setTimeout(function() {

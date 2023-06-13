@@ -9,7 +9,9 @@
 </head>
 <body>   
         <h1>Login Page</h1>
-        <input type="email" id="email" placeholder="Email" required >
+        <input type="email" id="email" placeholder="Email" pattern=".{5,}" required aria-label="Email" >
+        <input type="tel" id="phone" placeholder="Phone" pattern="[+0-9()-]{10,13}" required aria-label="Phone">
+        <input type="text" id="fullName" placeholder="Full Name" pattern="[A-Z][a-zA-Z]+\s[A-Z][a-zA-Z]+\s[A-Z][a-zA-Z]+" required aria-label="Full Name">
         <input type="password" id="password" placeholder="Password" required>
         <button class="loaderButton" onclick="redirectToProfile()">Login
             <div id="loader">
