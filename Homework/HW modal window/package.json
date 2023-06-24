@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "jquery": "^3.7.0"
+  },
+  "name": "hw-modal-window",
+  "version": "1.0.0",
+  "description": "create modal window use jquery",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gocha",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
