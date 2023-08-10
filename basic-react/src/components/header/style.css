@@ -1,0 +1,11 @@
+.header_content {
+    background-color: aliceblue;
+    height: 15%;
+
+
+    & h1 {
+       box-shadow: 1px 15px 25px black;
+       display: inline-flex;
+       padding: 10px;
+    }
+}

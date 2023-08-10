@@ -1,0 +1,7 @@
+.left-sidebar {
+    width: 20%;
+   
+    & ul {
+        text-align: left;
+    }
+}

@@ -1,9 +1,0 @@
-.first {
-    margin: 10px;
-    display: block;
-
-   & p {
-    margin: 0;
-   }
-}
-
