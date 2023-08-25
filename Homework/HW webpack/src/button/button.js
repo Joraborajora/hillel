@@ -1,0 +1,1 @@
+export const mood = () => console.log('Good');
