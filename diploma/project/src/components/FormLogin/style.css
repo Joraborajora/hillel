@@ -36,6 +36,15 @@
 
     cursor: pointer;
 }
+.login-btn {
+    width: 277px;
+    height: 56px;
+    background-color: #44B26F;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+}
 
 .button_login {
     position: absolute;

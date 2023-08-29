@@ -7,13 +7,13 @@ import { FiEye } from 'react-icons/fi';
 const FormLogin = () => {
     return (
         <form className='Login-Form'>
-            <Input type='text' name='userName' placeholder='User Name' className="input-login" />
-            <div className='password-block'>
-                <Input type='password' name='password' placeholder='Password' className='input-login password-eye' />
-                <FiEye className='FiEye'/>
-            </div>
-            <Button className='button_login' type='button' text='Login' />
-        </form>
+        <Input type='text' name='userName' placeholder='User Name' className="input-login" />
+        <div className='password-block'>
+            <Input type='password' name='password' placeholder='Password' className='input-login password-eye' />
+            <FiEye className='FiEye'/>
+        </div>
+        <Button className='button_login' type='button' text='Login' />
+    </form>
     )
 }
 
