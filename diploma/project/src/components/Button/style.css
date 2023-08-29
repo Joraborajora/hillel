@@ -1,4 +1,4 @@
-.green-btn {
+/* .green-btn {
     height: 56px;
     margin-top: 30px;
     color: white;
@@ -11,6 +11,18 @@
 
 .green-btn:active {
     background: #3ea164;
+} */
+
+.button_login {
+    width: 100%;
+    /* height: 40px; */
+    text-align: center;
+    background-color: #44B26F;
+    border: 0;
+    color: white;
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 18px 10px;
 }
 
 .button_table {

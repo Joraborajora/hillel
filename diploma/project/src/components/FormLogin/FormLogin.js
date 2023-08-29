@@ -12,7 +12,7 @@ const FormLogin = () => {
             <Input type='password' name='password' placeholder='Password' className='input-login password-eye' />
             <FiEye className='FiEye'/>
         </div>
-        <Button className='button_login' type='button' text='Login' />
+        <Button className={true} >Login</Button>
     </form>
     )
 }
