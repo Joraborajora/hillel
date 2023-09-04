@@ -1,7 +1,7 @@
 import './style.css';
 
 const Button = ( props ) => {
-    return <button type={ props.type } className='green-btn'> { props.text } </button>
+    return  <button className={props.className === true ? 'button_login' : 'button_table'}>{props.children}</button>
 }
 
 export default Button;
